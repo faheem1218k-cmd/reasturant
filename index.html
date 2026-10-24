@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Royal Bites Restaurant - Delicious food, fresh ingredients and great taste.">
+    <title>Royal Bites | Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#home" class="logo">Royal<span>Bites.</span></a>
+
+            <button class="menu-toggle" id="menuToggle"
+                aria-label="Open navigation" aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Our Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#menu" class="nav-btn">Order Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content container">
+                <p class="eyebrow">WELCOME TO ROYAL BITES</p>
+                <h1>Good Food.<br><span>Great Mood.</span></h1>
+                <p class="hero-text">
+                    Experience delicious flavours, fresh ingredients
+                    and unforgettable moments with every bite.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                    <a href="#about" class="btn btn-outline">Our Story</a>
+                </div>
+
+                <div class="hero-info">
+                    <div>
+                        <strong>4.9/5</strong>
+                        <span>Customer Rating</span>
+                    </div>
+                    <div>
+                        <strong>100%</strong>
+                        <span>Fresh Ingredients</span>
+                    </div>
+                    <div>
+                        <strong>30 min</strong>
+                        <span>Estimated Delivery</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="features container">
+            <article class="feature">
+                <span class="feature-icon">🍅</span>
+                <h3>Fresh Ingredients</h3>
+                <p>Fresh ingredients in every meal.</p>
+            </article>
+
+            <article class="feature">
+                <span class="feature-icon">👨‍🍳</span>
+                <h3>Expert Chefs</h3>
+                <p>Prepared with care and passion.</p>
+            </article>
+
+            <article class="feature">
+                <span class="feature-icon">🚚</span>
+                <h3>Fast Delivery</h3>
+                <p>Your favourite food at your door.</p>
+            </article>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section-padding" id="about">
+            <div class="container about-grid">
+                <div class="about-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=85"
+                        alt="Beautiful restaurant dining table"
+                        loading="lazy">
+                    <div class="experience-badge">
+                        <strong>Made</strong>
+                        <span>With Love ❤️</span>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <p class="eyebrow">OUR STORY</p>
+                    <h2>A Little Taste of <span>Happiness</span></h2>
+                    <p>
+                        At Royal Bites, we believe great food brings
+                        people together. Our team prepares every dish
+                        using fresh ingredients and carefully selected
+                        flavours.
+                    </p>
+                    <p>
+                        Whether you're enjoying a family dinner, meeting
+                        friends or ordering your favourite meal, we're
+                        here to make every moment delicious.
+                    </p>
+                    <a href="#contact" class="btn btn-primary">Visit Our Restaurant</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section class="menu-section section-padding" id="menu">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">OUR SPECIALITIES</p>
+                    <h2>Explore Our <span>Menu</span></h2>
+                    <p>Discover your next favourite meal.</p>
+                </div>
+
+                <div class="menu-grid">
+                    <article class="food-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=85"
+                            alt="Juicy beef burger" loading="lazy">
+                        <div class="food-info">
+                            <div class="food-title">
+                                <h3>Classic Burger</h3>
+                                <span class="price">Rs. 650</span>
+                            </div>
+                            <p>Juicy burger with fresh lettuce and cheese.</p>
+                            <button class="order-btn" data-item="Classic Burger">
+                                Order Now <span>↗</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="food-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=700&q=85"
+                            alt="Fresh cheese pizza" loading="lazy">
+                        <div class="food-info">
+                            <div class="food-title">
+                                <h3>Cheese Pizza</h3>
+                                <span class="price">Rs. 1,200</span>
+                            </div>
+                            <p>Oven-baked pizza with cheese and herbs.</p>
+                            <button class="order-btn" data-item="Cheese Pizza">
+                                Order Now <span>↗</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="food-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=700&q=85"
+                            alt="Fresh and colourful salad" loading="lazy">
+                        <div class="food-info">
+                            <div class="food-title">
+                                <h3>Fresh Salad</h3>
+                                <span class="price">Rs. 450</span>
+                            </div>
+                            <p>Crisp vegetables with a delicious dressing.</p>
+                            <button class="order-btn" data-item="Fresh Salad">
+                                Order Now <span>↗</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="food-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=700&q=85"
+                            alt="Delicious noodle bowl" loading="lazy">
+                        <div class="food-info">
+                            <div class="food-title">
+                                <h3>Special Noodles</h3>
+                                <span class="price">Rs. 750</span>
+                            </div>
+                            <p>Flavourful noodles with fresh vegetables.</p>
+                            <button class="order-btn" data-item="Special Noodles">
+                                Order Now <span>↗</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="food-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=85"
+                            alt="Grilled barbecue food" loading="lazy">
+                        <div class="food-info">
+                            <div class="food-title">
+                                <h3>BBQ Platter</h3>
+                                <span class="price">Rs. 1,500</span>
+                            </div>
+                            <p>Smoky grilled favourites full of flavour.</p>
+                            <button class="order-btn" data-item="BBQ Platter">
+                                Order Now <span>↗</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="food-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=700&q=85"
+                            alt="Special Italian pizza" loading="lazy">
+                        <div class="food-info">
+                            <div class="food-title">
+                                <h3>Special Pizza</h3>
+                                <span class="price">Rs. 1,400</span>
+                            </div>
+                            <p>A delicious pizza made for sharing.</p>
+                            <button class="order-btn" data-item="Special Pizza">
+                                Order Now <span>↗</span>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Special Offer -->
+        <section class="offer-section">
+            <div class="container offer-content">
+                <p class="eyebrow">A SPECIAL TREAT FOR YOU</p>
+                <h2>Good Food Is Always<br>Better Together!</h2>
+                <p>Bring your friends and enjoy your favourite flavours.</p>
+                <a href="#menu" class="btn btn-light">Order Your Favourite</a>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact-section section-padding" id="contact">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">GET IN TOUCH</p>
+                    <h2>Let's <span>Connect</span></h2>
+                    <p>We'd love to hear from you.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span>📍</span>
+                            <div>
+                                <h3>Our Location</h3>
+                                <p>Karachi, Pakistan</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <span>📞</span>
+                            <div>
+                                <h3>Call Us</h3>
+                                <p>+92 300 1234567</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <span>🕒</span>
+                            <div>
+                                <h3>Opening Hours</h3>
+                                <p>Every day: 12 PM – 11 PM</p>
+                            </div>
+                        </div>
+
+                        <a
+                            href="https://www.google.com/maps/search/restaurants+in+Karachi"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-primary map-btn">
+                            Find Us on Maps
+                        </a>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <h3>Send Us a Message</h3>
+
+                        <label for="customerName">Your Name</label>
+                        <input id="customerName" type="text"
+                            placeholder="Enter your name" required>
+
+                        <label for="customerEmail">Your Email</label>
+                        <input id="customerEmail" type="email"
+                            placeholder="Enter your email" required>
+
+                        <label for="customerMessage">Your Message</label>
+                        <textarea id="customerMessage" rows="4"
+                            placeholder="Write your message..." required></textarea>
+
+                        <button type="submit" class="btn btn-primary form-btn">
+                            Send Message
+                        </button>
+
+                        <p id="formMessage" class="form-message" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="#home" class="logo footer-logo">Royal<span>Bites.</span></a>
+            <p>Made with ❤️ for food lovers.</p>
+            <p>© <span id="year"></span> Royal Bites. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a
+        class="whatsapp-btn"
+        href="https://wa.me/923001234567"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Contact us on WhatsApp">
+        WhatsApp
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
